@@ -19,3 +19,5 @@ python run_ner_with_knowledge.py predict \
     --model_dir ./models/tcm_ner_model \
     --text_file ./data/test_texts.txt \
     --output_file ./results/batch_predictions.txt
+# 数据集链接
+https://github.com/Lowryyyy/Named-Entity-Recognition
