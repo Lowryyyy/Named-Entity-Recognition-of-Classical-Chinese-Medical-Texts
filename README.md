@@ -9,6 +9,10 @@ ddddd/
 ├── config.py                 # 配置文件
 ├── requirements.txt          # 依赖包
 ├── train_eval.py             # 训练和评估主入口
+|——data/
+|   |——train.txt              #训练文件
+|   |——test.txt               #测试文件
+|   |——dev.txt                #验证文件
 ├── utils/                    # 工具模块
 │   ├── __init__.py
 │   ├── data_utils.py         # 数据处理工具
@@ -25,6 +29,7 @@ ddddd/
     ├── bert_crf_model.py     # BERT+CRF模型
     ├── bert_bilstm_crf_model.py  # BERT+BiLSTM+CRF模型
     └── knowledge_enhanced_model.py  # 知识增强模型
+
 ```
 
 ## 环境要求
@@ -74,9 +79,9 @@ pip install -r requirements.txt
 ### 2. 准备数据
 
 在 `data/` 目录下放置三个文件：
-- `train.conll` - 训练集
-- `val.conll` - 验证集
-- `test.conll` - 测试集
+- `train.txt` - 训练集
+- `dev.txt` - 验证集
+- `test.txt` - 测试集
 
 如果没有数据，程序会自动生成示例数据。
 
